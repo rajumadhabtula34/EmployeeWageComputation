@@ -1,15 +1,23 @@
-## UC1 - Check Employee Attendance
+## UC2 - Calculate Daily Employee Wage
 
 ### Objective
 
-Check whether an employee is present or absent using random attendance.
+Calculate the daily wage of an employee based on attendance.
+
+### Assumptions
+
+* Wage Per Hour = 20
+* Full Day Working Hours = 8
 
 ### Logic
 
-* Generate a random value (0 or 1).
-* 0 represents Employee Absent.
-* 1 represents Employee Present.
+* If the employee is present:
+
+  * Daily Wage = Wage Per Hour × Full Day Hours
+* Otherwise:
+
+  * Daily Wage = 0
 
 ### Output
 
-Displays whether the employee is present or absent.
+Displays employee attendance and daily wage.
