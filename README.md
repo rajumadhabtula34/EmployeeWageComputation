@@ -1,24 +1,24 @@
-# UC11 - Manage Employee Wage Using Interface
+# UC12 - Manage Employee Wage Using ArrayList
 
 ## Objective
 
-Refactor the Employee Wage Computation program to use an Interface for managing employee wages of multiple companies.
+Refactor the Employee Wage Computation program to manage multiple companies using the **ArrayList** collection instead of an array.
 
 ## Features
 
-* Create an interface `IComputeEmpWage`.
-* Implement the interface in `EmpWageBuilder`.
-* Manage multiple companies through the interface.
-* Compute employee wages using polymorphism.
+* Replace the array with an `ArrayList`.
+* Store multiple `CompanyEmpWage` objects dynamically.
+* Compute employee wages for multiple companies.
+* Display the total employee wage for each company.
+* Improve flexibility in managing company records.
 
 ## Technologies Used
 
 * Java
 * Eclipse IDE
+* ArrayList
 * Interface
-* Object-Oriented Programming
-* Arrays
-* Constructors
+* Object-Oriented Programming (OOP)
 
 ## Classes
 
@@ -29,4 +29,4 @@ Refactor the Employee Wage Computation program to use an Interface for managing 
 
 ## Output
 
-Displays total employee wage for multiple companies using the interface implementation.
+Displays the total employee wage for multiple companies managed using an `ArrayList`.

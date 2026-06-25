@@ -1,30 +1,29 @@
 package com.employeewage;
 
+import java.util.ArrayList;
+
 public class EmpWageBuilder implements IComputeEmpWage {
 
     static final int IS_PART_TIME = 1;
     static final int IS_FULL_TIME = 2;
 
-    CompanyEmpWage[] companyEmpWages;
-    int numberOfCompanies = 0;
+    ArrayList<CompanyEmpWage> companyEmpWages;
 
     public EmpWageBuilder() {
-        companyEmpWages = new CompanyEmpWage[10];
+
+        companyEmpWages = new ArrayList<>();
     }
 
     @Override
     public void addCompany(CompanyEmpWage companyEmpWage) {
 
-        companyEmpWages[numberOfCompanies] = companyEmpWage;
-        numberOfCompanies++;
+        companyEmpWages.add(companyEmpWage);
     }
 
     @Override
     public void computeEmployeeWages() {
 
-        for (int i = 0; i < numberOfCompanies; i++) {
-
-            CompanyEmpWage company = companyEmpWages[i];
+        for (CompanyEmpWage company : companyEmpWages) {
 
             int totalEmpHours = 0;
             int totalWorkingDays = 0;
