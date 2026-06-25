@@ -62,5 +62,19 @@ public class EmpWageBuilder implements IComputeEmpWage {
 
             System.out.println(company);
         }
+        
+        
+    }
+    @Override
+    public int getTotalWage(String companyName) {
+
+        for (CompanyEmpWage company : companyEmpWages) {
+
+            if (company.company.equals(companyName)) {
+                return company.totalEmployeeWage;
+            }
+        }
+
+        return 0;
     }
 }

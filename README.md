@@ -1,15 +1,15 @@
-# UC13 - Store Daily Wage Along with Total Wage
+# UC14 - Get Total Wage by Company
 
 ## Objective
 
-Enhance the Employee Wage Computation program to store the daily employee wage along with the total employee wage for each company.
+Enhance the Employee Wage Computation program to retrieve the total employee wage of a company using its company name.
 
 ## Features
 
-* Store daily employee wages using `ArrayList<Integer>`.
-* Compute total employee wage.
-* Display daily wages and total wage for each company.
-* Manage multiple companies using the existing Employee Wage Builder.
+* Query employee wage using the company name.
+* Search through stored company records.
+* Return the total employee wage for the requested company.
+* Continue managing multiple companies using the Employee Wage Builder.
 
 ## Technologies Used
 
@@ -28,4 +28,4 @@ Enhance the Employee Wage Computation program to store the daily employee wage a
 
 ## Output
 
-Displays the daily employee wages and the total employee wage for each company.
+Displays the total employee wage when queried by the company name.

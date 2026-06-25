@@ -18,5 +18,14 @@ public class EmployeeWageComputation {
                 new CompanyEmpWage("Wipro",30,24,140));
 
         empWageBuilder.computeEmployeeWages();
+
+        System.out.println("\nTotal Wage of TCS : "
+                + empWageBuilder.getTotalWage("TCS"));
+
+        System.out.println("Total Wage of Infosys : "
+                + empWageBuilder.getTotalWage("Infosys"));
+
+        System.out.println("Total Wage of Wipro : "
+                + empWageBuilder.getTotalWage("Wipro"));
     }
 }
