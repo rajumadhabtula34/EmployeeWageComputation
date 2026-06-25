@@ -1,28 +1,15 @@
-# Employee Wage Computation
+## UC1 - Check Employee Attendance
 
-## Description
+### Objective
 
-Employee Wage Computation is a Java application that demonstrates the computation of employee wages using Java programming concepts. The project is implemented incrementally through different use cases, with each use case introducing new functionality.
+Check whether an employee is present or absent using random attendance.
 
-## Technologies Used
+### Logic
 
-* Java
-* Eclipse IDE
-* Git
-* GitHub
+* Generate a random value (0 or 1).
+* 0 represents Employee Absent.
+* 1 represents Employee Present.
 
-## Project Structure
+### Output
 
-* Main Branch – Initial Project Setup
-* Dev Branch – Integration Branch
-* UC1 – Check Employee Attendance
-* UC2 – Calculate Daily Employee Wage
-* UC3 – Add Part-Time Employee & Wage
-* UC4 – Solve Using Switch Case
-* UC5 – Calculate Monthly Employee Wage
-* UC6 – Calculate Wage Till Maximum Working Hours or Days
-* UC7 – Refactor Code Using Class Methods
-
-## Author
-
-Ram Raj
+Displays whether the employee is present or absent.
