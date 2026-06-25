@@ -4,17 +4,17 @@ public class EmployeeWageComputation {
 
     static final int IS_PART_TIME = 1;
     static final int IS_FULL_TIME = 2;
-    static final int EMP_RATE_PER_HOUR = 20;
-    static final int MAX_WORKING_DAYS = 20;
-    static final int MAX_WORKING_HOURS = 100;
 
-    public static int computeEmployeeWage() {
+    public static int computeEmployeeWage(String company,
+                                          int empRatePerHour,
+                                          int maxWorkingDays,
+                                          int maxWorkingHours) {
 
         int totalEmpHours = 0;
         int totalWorkingDays = 0;
 
-        while (totalEmpHours < MAX_WORKING_HOURS &&
-                totalWorkingDays < MAX_WORKING_DAYS) {
+        while (totalEmpHours < maxWorkingHours &&
+               totalWorkingDays < maxWorkingDays) {
 
             totalWorkingDays++;
 
@@ -38,15 +38,19 @@ public class EmployeeWageComputation {
             totalEmpHours += empHours;
         }
 
-        return totalEmpHours * EMP_RATE_PER_HOUR;
+        int totalEmployeeWage = totalEmpHours * empRatePerHour;
+
+        System.out.println(company + " Total Employee Wage = " + totalEmployeeWage);
+
+        return totalEmployeeWage;
     }
 
     public static void main(String[] args) {
 
         System.out.println("Welcome to Employee Wage Computation");
 
-        int totalEmployeeWage = computeEmployeeWage();
+        computeEmployeeWage("TCS", 20, 20, 100);
 
-        System.out.println("Total Employee Wage = " + totalEmployeeWage);
+        computeEmployeeWage("Infosys", 25, 22, 120);
     }
 }

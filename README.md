@@ -1,15 +1,34 @@
-## UC7 - Refactor the Code Using Class Method
+# UC8 - Compute Employee Wage for Multiple Companies
 
-### Objective
+## Objective
 
-Refactor the employee wage computation program by moving the wage calculation logic into a separate class method.
+Compute Employee Wage for multiple companies where each company has its own wage per hour, maximum working days, and maximum working hours.
 
-### Features
+## Features
 
-* Uses class variables for constants.
-* Uses a class method (`computeEmployeeWage`) to calculate the total employee wage.
-* Improves code readability and reusability.
+* Compute employee wage for multiple companies.
+* Accept company details using method parameters.
+* Support different wage policies for each company.
+* Calculate total employee wage based on attendance.
+* Reuse the same computation method for multiple companies.
 
-### Output
+## Technologies Used
 
-Displays the total employee wage returned by the class method.
+* Java
+* Eclipse IDE
+* Methods
+* Function Parameters
+* Switch Case
+* Loops
+* Random Number Generation
+
+## OOP Concepts Used
+
+* Class
+* Static Method
+* Method Parameters
+* Code Reusability
+
+## Output
+
+* Display total employee wage for each company independently.
