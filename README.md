@@ -1,31 +1,32 @@
-# UC10 - Manage Employee Wage of Multiple Companies
+# UC11 - Manage Employee Wage Using Interface
 
 ## Objective
 
-Manage employee wage computation for multiple companies using a single EmpWageBuilder.
+Refactor the Employee Wage Computation program to use an Interface for managing employee wages of multiple companies.
 
 ## Features
 
-- Create CompanyEmpWage objects.
-- Store multiple companies in an array.
-- Compute employee wage for every company.
-- Display total employee wage for each company.
+* Create an interface `IComputeEmpWage`.
+* Implement the interface in `EmpWageBuilder`.
+* Manage multiple companies through the interface.
+* Compute employee wages using polymorphism.
 
 ## Technologies Used
 
-- Java
-- Eclipse IDE
-- Object-Oriented Programming
-- Arrays
-- Methods
-- Constructors
+* Java
+* Eclipse IDE
+* Interface
+* Object-Oriented Programming
+* Arrays
+* Constructors
 
 ## Classes
 
-- CompanyEmpWage
-- EmpWageBuilder
-- EmployeeWageComputation
+* CompanyEmpWage
+* IComputeEmpWage
+* EmpWageBuilder
+* EmployeeWageComputation
 
 ## Output
 
-Displays employee wages for multiple companies managed by one builder.
+Displays total employee wage for multiple companies using the interface implementation.

@@ -1,6 +1,6 @@
 package com.employeewage;
 
-public class EmpWageBuilder {
+public class EmpWageBuilder implements IComputeEmpWage {
 
     static final int IS_PART_TIME = 1;
     static final int IS_FULL_TIME = 2;
@@ -12,11 +12,14 @@ public class EmpWageBuilder {
         companyEmpWages = new CompanyEmpWage[10];
     }
 
+    @Override
     public void addCompany(CompanyEmpWage companyEmpWage) {
+
         companyEmpWages[numberOfCompanies] = companyEmpWage;
         numberOfCompanies++;
     }
 
+    @Override
     public void computeEmployeeWages() {
 
         for (int i = 0; i < numberOfCompanies; i++) {

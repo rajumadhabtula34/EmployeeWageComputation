@@ -6,7 +6,7 @@ public class EmployeeWageComputation {
 
         System.out.println("Welcome to Employee Wage Computation");
 
-        EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+        IComputeEmpWage empWageBuilder = new EmpWageBuilder();
 
         empWageBuilder.addCompany(
                 new CompanyEmpWage("TCS", 20, 20, 100));
