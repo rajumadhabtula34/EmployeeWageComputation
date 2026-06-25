@@ -1,16 +1,15 @@
-# UC12 - Manage Employee Wage Using ArrayList
+# UC13 - Store Daily Wage Along with Total Wage
 
 ## Objective
 
-Refactor the Employee Wage Computation program to manage multiple companies using the **ArrayList** collection instead of an array.
+Enhance the Employee Wage Computation program to store the daily employee wage along with the total employee wage for each company.
 
 ## Features
 
-* Replace the array with an `ArrayList`.
-* Store multiple `CompanyEmpWage` objects dynamically.
-* Compute employee wages for multiple companies.
-* Display the total employee wage for each company.
-* Improve flexibility in managing company records.
+* Store daily employee wages using `ArrayList<Integer>`.
+* Compute total employee wage.
+* Display daily wages and total wage for each company.
+* Manage multiple companies using the existing Employee Wage Builder.
 
 ## Technologies Used
 
@@ -29,4 +28,4 @@ Refactor the Employee Wage Computation program to manage multiple companies usin
 
 ## Output
 
-Displays the total employee wage for multiple companies managed using an `ArrayList`.
+Displays the daily employee wages and the total employee wage for each company.

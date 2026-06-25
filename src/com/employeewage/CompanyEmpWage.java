@@ -1,5 +1,7 @@
 package com.employeewage;
 
+import java.util.ArrayList;
+
 public class CompanyEmpWage {
 
     String company;
@@ -7,6 +9,8 @@ public class CompanyEmpWage {
     int maxWorkingDays;
     int maxWorkingHours;
     int totalEmployeeWage;
+
+    ArrayList<Integer> dailyWages = new ArrayList<>();
 
     public CompanyEmpWage(String company, int empRatePerHour,
             int maxWorkingDays, int maxWorkingHours) {
@@ -23,6 +27,9 @@ public class CompanyEmpWage {
 
     @Override
     public String toString() {
-        return company + " Total Employee Wage = " + totalEmployeeWage;
+
+        return "\nCompany : " + company +
+               "\nDaily Wages : " + dailyWages +
+               "\nTotal Employee Wage : " + totalEmployeeWage;
     }
 }
