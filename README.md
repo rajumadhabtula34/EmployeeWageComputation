@@ -1,21 +1,22 @@
-## UC4 - Solve Using Switch Case Statement
+## UC5 - Calculate Monthly Employee Wage
 
 ### Objective
 
-Implement employee wage computation using the switch-case statement instead of if-else.
+Calculate the total employee wage for a month.
 
 ### Assumptions
 
 * Wage Per Hour = 20
 * Part-Time Hours = 4
 * Full-Time Hours = 8
+* Working Days = 20
 
 ### Logic
 
-* Generate a random employee type.
-* Use a switch-case statement to determine working hours.
-* Calculate daily wage.
+* Simulate attendance for each of the 20 working days.
+* Calculate the daily wage.
+* Accumulate the wages to determine the monthly wage.
 
 ### Output
 
-Displays employee type and daily wage using switch-case logic.
+Displays the daily wage for each working day and the total monthly wage.
