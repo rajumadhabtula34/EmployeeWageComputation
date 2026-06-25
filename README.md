@@ -1,25 +1,15 @@
-## UC6 - Calculate Wages Till a Condition of Total Working Hours or Days is Reached
+## UC7 - Refactor the Code Using Class Method
 
 ### Objective
 
-Calculate employee wages until the maximum working hours or maximum working days are reached.
+Refactor the employee wage computation program by moving the wage calculation logic into a separate class method.
 
-### Assumptions
+### Features
 
-* Wage Per Hour = 20
-* Part-Time Hours = 4
-* Full-Time Hours = 8
-* Maximum Working Days = 20
-* Maximum Working Hours = 100
-
-### Logic
-
-* Continue computing daily wages while:
-
-  * Total working days are less than 20, and
-  * Total working hours are less than 100.
-* Stop when either limit is reached.
+* Uses class variables for constants.
+* Uses a class method (`computeEmployeeWage`) to calculate the total employee wage.
+* Improves code readability and reusability.
 
 ### Output
 
-Displays the daily working hours, daily wage, total working days, total working hours, and total employee wage.
+Displays the total employee wage returned by the class method.
