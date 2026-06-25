@@ -1,8 +1,8 @@
-## UC3 - Add Part-Time Employee & Wage
+## UC4 - Solve Using Switch Case Statement
 
 ### Objective
 
-Extend the application to support both part-time and full-time employees.
+Implement employee wage computation using the switch-case statement instead of if-else.
 
 ### Assumptions
 
@@ -12,13 +12,10 @@ Extend the application to support both part-time and full-time employees.
 
 ### Logic
 
-* Randomly determine employee status:
-
-  * 0 → Absent
-  * 1 → Part-Time
-  * 2 → Full-Time
-* Calculate daily wage based on working hours.
+* Generate a random employee type.
+* Use a switch-case statement to determine working hours.
+* Calculate daily wage.
 
 ### Output
 
-Displays employee type and daily wage.
+Displays employee type and daily wage using switch-case logic.

@@ -13,14 +13,21 @@ public class EmployeeWageComputation {
         int empCheck = (int) (Math.random() * 3);
         int empHours = 0;
 
-        if (empCheck == IS_PART_TIME) {
-            empHours = 4;
-            System.out.println("Employee is Part Time");
-        } else if (empCheck == IS_FULL_TIME) {
-            empHours = 8;
-            System.out.println("Employee is Full Time");
-        } else {
-            System.out.println("Employee is Absent");
+        switch (empCheck) {
+
+            case IS_PART_TIME:
+                empHours = 4;
+                System.out.println("Employee is Part Time");
+                break;
+
+            case IS_FULL_TIME:
+                empHours = 8;
+                System.out.println("Employee is Full Time");
+                break;
+
+            default:
+                empHours = 0;
+                System.out.println("Employee is Absent");
         }
 
         int empWage = empHours * EMP_RATE_PER_HOUR;
