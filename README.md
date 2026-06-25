@@ -1,23 +1,24 @@
-## UC2 - Calculate Daily Employee Wage
+## UC3 - Add Part-Time Employee & Wage
 
 ### Objective
 
-Calculate the daily wage of an employee based on attendance.
+Extend the application to support both part-time and full-time employees.
 
 ### Assumptions
 
 * Wage Per Hour = 20
-* Full Day Working Hours = 8
+* Part-Time Hours = 4
+* Full-Time Hours = 8
 
 ### Logic
 
-* If the employee is present:
+* Randomly determine employee status:
 
-  * Daily Wage = Wage Per Hour × Full Day Hours
-* Otherwise:
-
-  * Daily Wage = 0
+  * 0 → Absent
+  * 1 → Part-Time
+  * 2 → Full-Time
+* Calculate daily wage based on working hours.
 
 ### Output
 
-Displays employee attendance and daily wage.
+Displays employee type and daily wage.
