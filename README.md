@@ -1,34 +1,31 @@
-# UC8 - Compute Employee Wage for Multiple Companies
+# UC9 - Save Total Wage for Each Company
 
 ## Objective
 
-Compute Employee Wage for multiple companies where each company has its own wage per hour, maximum working days, and maximum working hours.
+Store the total employee wage for each company using instance variables.
 
 ## Features
 
-* Compute employee wage for multiple companies.
-* Accept company details using method parameters.
-* Support different wage policies for each company.
-* Calculate total employee wage based on attendance.
-* Reuse the same computation method for multiple companies.
+- Create a CompanyEmpWage class for each company.
+- Store company details using instance variables.
+- Compute total employee wage for each company.
+- Save total wage inside the CompanyEmpWage object.
+- Display company name along with total employee wage.
 
 ## Technologies Used
 
-* Java
-* Eclipse IDE
-* Methods
-* Function Parameters
-* Switch Case
-* Loops
-* Random Number Generation
+- Java
+- Eclipse IDE
+- Object-Oriented Programming
+- Constructors
+- Instance Variables
+- Methods
 
-## OOP Concepts Used
+## Classes
 
-* Class
-* Static Method
-* Method Parameters
-* Code Reusability
+- CompanyEmpWage
+- EmployeeWageComputation
 
 ## Output
 
-* Display total employee wage for each company independently.
+Displays the total employee wage for each company.
