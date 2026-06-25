@@ -2,57 +2,21 @@ package com.employeewage;
 
 public class EmployeeWageComputation {
 
-    static final int IS_PART_TIME = 1;
-    static final int IS_FULL_TIME = 2;
-
-    public static void computeEmployeeWage(CompanyEmpWage companyEmpWage) {
-
-        int totalEmpHours = 0;
-        int totalWorkingDays = 0;
-
-        while (totalEmpHours < companyEmpWage.maxWorkingHours &&
-                totalWorkingDays < companyEmpWage.maxWorkingDays) {
-
-            totalWorkingDays++;
-
-            int empCheck = (int) (Math.random() * 3);
-            int empHours = 0;
-
-            switch (empCheck) {
-
-                case IS_PART_TIME:
-                    empHours = 4;
-                    break;
-
-                case IS_FULL_TIME:
-                    empHours = 8;
-                    break;
-
-                default:
-                    empHours = 0;
-            }
-
-            totalEmpHours += empHours;
-        }
-
-        companyEmpWage.totalEmployeeWage =
-                totalEmpHours * companyEmpWage.empRatePerHour;
-    }
-
     public static void main(String[] args) {
 
         System.out.println("Welcome to Employee Wage Computation");
 
-        CompanyEmpWage tcs =
-                new CompanyEmpWage("TCS", 20, 20, 100);
+        EmpWageBuilder empWageBuilder = new EmpWageBuilder();
 
-        CompanyEmpWage infosys =
-                new CompanyEmpWage("Infosys", 25, 22, 120);
+        empWageBuilder.addCompany(
+                new CompanyEmpWage("TCS", 20, 20, 100));
 
-        computeEmployeeWage(tcs);
-        computeEmployeeWage(infosys);
+        empWageBuilder.addCompany(
+                new CompanyEmpWage("Infosys", 25, 22, 120));
 
-        System.out.println(tcs);
-        System.out.println(infosys);
+        empWageBuilder.addCompany(
+                new CompanyEmpWage("Wipro", 30, 24, 140));
+
+        empWageBuilder.computeEmployeeWages();
     }
 }

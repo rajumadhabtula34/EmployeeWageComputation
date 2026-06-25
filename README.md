@@ -1,31 +1,31 @@
-# UC9 - Save Total Wage for Each Company
+# UC10 - Manage Employee Wage of Multiple Companies
 
 ## Objective
 
-Store the total employee wage for each company using instance variables.
+Manage employee wage computation for multiple companies using a single EmpWageBuilder.
 
 ## Features
 
-- Create a CompanyEmpWage class for each company.
-- Store company details using instance variables.
-- Compute total employee wage for each company.
-- Save total wage inside the CompanyEmpWage object.
-- Display company name along with total employee wage.
+- Create CompanyEmpWage objects.
+- Store multiple companies in an array.
+- Compute employee wage for every company.
+- Display total employee wage for each company.
 
 ## Technologies Used
 
 - Java
 - Eclipse IDE
 - Object-Oriented Programming
-- Constructors
-- Instance Variables
+- Arrays
 - Methods
+- Constructors
 
 ## Classes
 
 - CompanyEmpWage
+- EmpWageBuilder
 - EmployeeWageComputation
 
 ## Output
 
-Displays the total employee wage for each company.
+Displays employee wages for multiple companies managed by one builder.

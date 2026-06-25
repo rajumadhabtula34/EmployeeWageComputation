@@ -16,6 +16,10 @@ public class CompanyEmpWage {
         this.maxWorkingDays = maxWorkingDays;
         this.maxWorkingHours = maxWorkingHours;
     }
+    public void setTotalEmployeeWage(int totalEmployeeWage) {
+        this.totalEmployeeWage = totalEmployeeWage;
+    }
+
 
     @Override
     public String toString() {
